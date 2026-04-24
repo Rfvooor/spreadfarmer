@@ -1,0 +1,30 @@
+{
+  "name": "spread-farmer",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Polymarket Dynamic Rebate Farming Bot for 15m crypto markets",
+  "main": "dist/index.js",
+  "scripts": {
+    "spread": "node dist/spread-trader.js",
+    "ladder": "node dist/volatility-ladder.js",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "dev:ladder": "tsx src/volatility-ladder.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ethersproject/wallet": "^5.7.0",
+    "@polymarket/clob-client": "^5.2.1",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.0",
+    "polymarket-websocket-client": "^0.1.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
